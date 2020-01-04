@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Infinite Recharge Score Calculator </title>
+<body onload = "startCalculator()">
+<style>
+body {background-color: #d1d1e0; margin-bottom: 150;}
+p {margin-left: 10px; margin-right: 30px;}
+</style>
+<button onclick="scoreUp()">+1</button>
+<button onclick="scoreDown()">-1</button>
+<button onclick="rankingUp()">+1</button>
+<button onclick="rankingDown()">-1</button>
+
+<script>
+var redScore = 0;
+var blueScore = 0;
+var redRanking = 0;
+var blueRanking = 0;
+
+function startCalculator() {
+	 
+}
+
+function scoreUp() {
+	redScore += 1;
+}
+
+function scoreDown() {
+	redScore -= 1;
+}
+
+function rankingUp() {
+	redRanking += 1;
+}
+
+function rankingDown() {
+	redRanking -= 1;
+}
+</script>
+</body>
+</head>
+</html>
