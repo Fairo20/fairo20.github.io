@@ -11,6 +11,7 @@ p {margin-left: 10px; margin-right: 30px;}
 <button onclick="scoreDown()">-1</button>
 <button onclick="rankingUp()">+1</button>
 <button onclick="rankingDown()">-1</button>
+<p id="red"></p>
 
 <script>
 var redScore = 0;
@@ -36,6 +37,10 @@ function rankingUp() {
 
 function rankingDown() {
 	redRanking -= 1;
+}
+
+function updateScore() {
+	document.getElementById("red").innerHTML = redScore;
 }
 </script>
 </body>
