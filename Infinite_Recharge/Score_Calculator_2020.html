@@ -8,12 +8,12 @@ body {background-color: #d1d1e0; margin-bottom: 150;}
 p {margin-left: 10px; margin-right: 30px;}
 </style>
 
+<p id="redS"></p>
+<p id="redR"></p>
 <button onclick="scoreUp()">+1</button>
 <button onclick="scoreDown()">-1</button>
 <button onclick="rankingUp()">+1</button>
 <button onclick="rankingDown()">-1</button>
-<p id="redS"></p>
-<p id="redR"></p>
 
 <script>
 var redScore = 0;
@@ -23,22 +23,22 @@ var blueRanking = 0;
 
 function scoreUp() {
 	redScore += 1;
-	document.getElementById("redS").innerHTML = redScore;
+	document.getElementById("redS").innerHTML = "Red Score: " + redScore;
 }
 
 function scoreDown() {
 	redScore -= 1;
-	document.getElementById("redS").innerHTML = redScore;
+	document.getElementById("redS").innerHTML = "Red Score: " + redScore;
 }
 
 function rankingUp() {
 	redRanking += 1;
-	document.getElementById("redR").innerHTML = redRanking;
+	document.getElementById("redR").innerHTML = "Red Ranking: " + redRanking;
 }
 
 function rankingDown() {
 	redRanking -= 1;
-	document.getElementById("redR").innerHTML = redRanking;
+	document.getElementById("redR").innerHTML = "Red Ranking: " + redRanking;
 }
 
 function updateScore() {
