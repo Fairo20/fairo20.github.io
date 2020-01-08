@@ -1,108 +1,230 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <title> Infinite Recharge Score Calculator </title>
 <body onload = "updateScore()">
 <style>
 body {background-color: #d1d1e0; margin-bottom: 150;}
-p {margin-left: 10px; margin-right: 30px;}
 </style>
-
-<p id="redS"></p>
-<p id="redR"></p>
-<button onclick="scoreUp(2)">Auton Bottom</button>
-<button onclick="scoreUp(4)">Auton Outer</button>
-<button onclick="scoreUp(6)">Auton Inner</button>
-
-<button onclick="scoreUp(1)">Tele-Op Bottom</button>
-<button onclick="scoreUp(2)">Tele-Op Outer</button>
-<button onclick="scoreUp(3)">Tele-Op Inner</button>
-
-<button onclick="climbRobot()">Climb</button>
-<button onclick="balance();">Balanced?</button>
-
-<button onclick="finishStage2()">Finished Stage 2</button>
-<button onclick="finishStage3();">Finished Stage 3</button>
-
-<button onclick="scoreDown(3)">Foul</button>
-<button onclick="scoreDown(15)">Tech Foul</button>
-
+<div class = "container-fluid">
+	<div class = "row justify-content-md-center">
+		<div class = "col col-lg-2" id = "redS" style="font-size:22pt"></div>
+		<div class = "col col-lg-2" id = "redR" style="font-size:22pt"></div>
+	</div>
+</div>
+<div class = "container">
+	<div class = "row">
+		<div class = "col-sm">
+<h5>Autonomous</h5>
+<button onclick="scoreUp('red', 2)">Bottom</button>
+<button onclick="scoreUp('red', 4)">Outer</button>
+<button onclick="scoreUp('red', 6)">Inner</button>
+		</div>
+		<div class = "col-sm">
+<h5>Driver Control</h5>
+<button onclick="scoreUp('red', 1)">Bottom</button>
+<button onclick="scoreUp('red', 2)">Outer</button>
+<button onclick="scoreUp('red', 3)">Inner</button>
+		</div>
+		<div class = "col-sm">
+<h5>Shield Generator</h5>
+<button onclick="climbRobot('red')">Climb</button>
+<button onclick="balance('red')">Balanced?</button>
+		</div>
+		<div class = "col-sm">
+<h5>Control Panel</h5>
+<button onclick="finishStage2('red')">Stage 2</button>
+<button onclick="finishStage3('red')">Stage 3</button>
+		</div>
+		<div class = "col-sm">
+<h5>Penalties</h5>
+<button onclick="scoreDown('red', 3)">Foul</button>
+<button onclick="scoreDown('red', 15)">Tech Foul</button>
+		</div>
+	</div>
+</div>
+<div class = "container-fluid">
+	<div class = "row justify-content-md-center">
+		<div class = "col col-lg-2" id = "blueS" style="font-size:22pt"></div>
+		<div class = "col col-lg-2" id = "blueR" style="font-size:22pt"></div>
+	</div>
+</div>
+<div class = "container">
+	<div class = "row">
+		<div class = "col-sm">
+<h5>Autonomous</h5>
+<button onclick="scoreUp('blue', 2)">Bottom</button>
+<button onclick="scoreUp('blue', 4)">Outer</button>
+<button onclick="scoreUp('blue', 6)">Inner</button>
+		</div>
+		<div class = "col-sm">
+<h5>Driver Control</h5>
+<button onclick="scoreUp('blue', 1)">Bottom</button>
+<button onclick="scoreUp('blue', 2)">Outer</button>
+<button onclick="scoreUp('blue', 3)">Inner</button>
+		</div>
+		<div class = "col-sm">
+<h5>Shield Generator</h5>
+<button onclick="climbRobot('blue')">Climb</button>
+<button onclick="balance('blue')">Balanced?</button>
+		</div>
+		<div class = "col-sm">
+<h5>Control Panel</h5>
+<button onclick="finishStage2('blue')">Stage 2</button>
+<button onclick="finishStage3('blue')">Stage 3</button>
+		</div>
+		<div class = "col-sm">
+<h5>Penalties</h5>
+<button onclick="scoreDown('blue', 3)">Foul</button>
+<button onclick="scoreDown('blue', 15)">Tech Foul</button>
+		</div>
+	</div>
+</div>
 <script>
-var redScore = 0;
-var redBalls = 0;
-var blueScore = 0;
-var blueBalls = 0;
-var redRanking = 0;
-var blueRanking = 0;
-var robotsClimbed = 0;
-var isBalanced = false;
-var stage2Finished = false;
-var stage3Finished = false;
 
-function scoreUp(num) {
-	redScore += num;
-	redBalls += 1;
-	document.getElementById("redS").innerHTML = "Red Score: " + redScore;
-	console.log(redScore + " num");
+let redScore = 0;
+let redBalls = 0;
+let blueScore = 0;
+let blueBalls = 0;
+let redRanking = 0;
+let blueRanking = 0;
+let robotsClimbedRed = 0;
+let robotsClimbedBlue = 0;
+let isBalancedRed = false;
+let isBalancedBlue = false;
+let stage2FinishedRed = false;
+let stage3FinishedRed = false;
+let stage2FinishedBlue = false;
+let stage3FinishedBlue = false;
+
+function scoreUp(alignment, num) {
+	if(alignment == 'red') {
+		redScore += num;
+		redBalls += 1;
+		document.getElementById("redS").innerHTML = "Red Score: " + redScore;
+		console.log(redScore + " num");
+	}
+	else if(alignment == 'blue') {
+		blueScore += num;
+		blueBalls += 1;
+		document.getElementById("blueS").innerHTML = "Blue Score: " + blueScore;
+		console.log(blueScore + " num");
+	}
 }
 
-function scoreDown(num) {
-	redScore -= num;
-	document.getElementById("redS").innerHTML = "Red Score: " + redScore;
+function scoreDown(alignment, num) {
+	if(alignment == 'red') {
+		redScore -= num;
+		document.getElementById("redS").innerHTML = "Red Score: " + redScore;
+	}
+	else if(alignment == 'blue') {
+		blueScore -= num;
+		document.getElementById("blueS").innerHTML = "Blue Score: " + blueScore;
+	}
 }
 
-function rankingUp() {
+function rankingUp(alignment) {
+	if(alignment == 'red') {
 	redRanking += 1;
 	document.getElementById("redR").innerHTML = "Red Ranking: " + redRanking;
-}
-
-function rankingDown() {
-	redRanking -= 1;
-	document.getElementById("redR").innerHTML = "Red Ranking: " + redRanking;
-}
-
-function climbRobot(){
-	if(robotsClimbed < 3) {
-	robotsClimbed += 1;
-	scoreUp(25);
-	if(robotsClimbed > 2 && isBalanced == false) {
-		rankingUp();
 	}
+	else if(alignment == 'blue') {
+	blueRanking += 1;
+	document.getElementById("blueR").innerHTML = "Blue Ranking: " + blueRanking;
 	}
 }
 
-function balance() {
-	if(isBalanced == false && robotsClimbed > 0) {
-	isBalanced = true;
-	scoreUp(15);
-	if(robotsClimbed == 2) {
-		rankingUp();
+function climbRobot(alignment){
+if(alignment == 'red') {
+	if(robotsClimbedRed < 3) {
+	robotsClimbedRed += 1;
+	scoreUp('red', 25);
+	if(robotsClimbedRed > 2 && isBalancedRed == false) {
+		rankingUp('red');
 	}
 	}
 }
+else if(alignment == 'blue') {
+	if(robotsClimbedBlue < 3) {
+	robotsClimbedBlue += 1;
+	scoreUp('blue', 25);
+	if(robotsClimbedBlue > 2 && isBalancedBlue == false) {
+		rankingUp('blue');
+	}
+	}
+}
+}
 
-function finishStage2() {
-	if(stage2Finished == false && redBalls >= 29) {
-		stage2Finished = true; 
-		scoreUp(10);
+function balance(alignment) {
+if(alignment == 'red') {
+	if(isBalancedRed == false && robotsClimbedRed > 0) {
+	isBalancedRed = true;
+	scoreUp('red', 15);
+	if(robotsClimbedRed == 2) {
+		rankingUp('red');
+	}
+	}
+}
+else if(alignment == 'blue') {
+	if(isBalancedBlue == false && robotsClimbedBlue > 0) {
+	isBalancedBlue = true;
+	scoreUp('blue', 15);
+	if(robotsClimbedBlue == 2) {
+		rankingUp('blue');
+	}
+	}
+}
+}
+
+function finishStage2(alignment) {
+if(alignment == 'red') {
+	if(stage2FinishedRed == false && redBalls >= 29) {
+		stage2FinishedRed = true; 
+		scoreUp('red', 10);
 		redBalls -= 1;
 	}
 }
-
-function finishStage3() {
-	if(stage3Finished == false && stage2Finished == true && redBalls >= 49) {
-		stage3Finished = true; 
-		scoreUp(20);
-		redBalls -= 1;
-		rankingUp();
+else if(alignment == 'blue') {
+	if(stage2FinishedBlue == false && blueBalls >= 29) {
+		stage2FinishedBlue = true; 
+		scoreUp('blue', 10);
+		blueBalls -= 1;
 	}
+}
+}
+
+function finishStage3(alignment) {
+if(alignment == 'red') {
+	if(stage3FinishedRed == false && stage2FinishedRed == true && redBalls >= 49) {
+		stage3FinishedRed = true; 
+		scoreUp('red', 20);
+		redBalls -= 1;
+		rankingUp('red');
+	}
+}
+else if(alignment == 'blue') {
+	if(stage3FinishedBlue == false && stage2FinishedBlue == true && blueBalls >= 49) {
+		stage3FinishedBlue = true; 
+		scoreUp('blue', 20);
+		redBalls -= 1;
+		rankingUp('blue');
+	}
+}
 }
 
 function updateScore() {
 	document.getElementById("redS").innerHTML = "Red Score: " + redScore;
 	document.getElementById("redR").innerHTML = "Red Ranking: " + redRanking;
+	document.getElementById("blueS").innerHTML = "Blue Score: " + blueScore;
+	document.getElementById("blueR").innerHTML = "Blue Ranking: " + blueRanking;
 }
 </script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </head>
 </html>
