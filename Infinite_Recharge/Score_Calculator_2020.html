@@ -19,15 +19,15 @@ body {background-color: #d1d1e0; margin-bottom: 150;}
 	<div class = "row">
 		<div class = "col-sm">
 <h5>Autonomous</h5>
-<button onclick="scoreUp('red', 2)">Bottom</button>
-<button onclick="scoreUp('red', 4)">Outer</button>
-<button onclick="scoreUp('red', 6)">Inner</button>
+<button onclick="scoreUp('red', 2); autonLimit('red')">Bottom</button>
+<button onclick="scoreUp('red', 4); autonLimit('red')">Outer</button>
+<button onclick="scoreUp('red', 6); autonLimit('red')">Inner</button>
 		</div>
 		<div class = "col-sm">
 <h5>Driver Control</h5>
-<button onclick="scoreUp('red', 1)">Bottom</button>
-<button onclick="scoreUp('red', 2)">Outer</button>
-<button onclick="scoreUp('red', 3)">Inner</button>
+<button onclick="scoreUp('red', 1); stage2Limit('red'); console.log(redBalls)">Bottom</button>
+<button onclick="scoreUp('red', 2); stage2Limit('red')">Outer</button>
+<button onclick="scoreUp('red', 3); stage2Limit('red')">Inner</button>
 		</div>
 		<div class = "col-sm">
 <h5>Shield Generator</h5>
@@ -56,15 +56,15 @@ body {background-color: #d1d1e0; margin-bottom: 150;}
 	<div class = "row">
 		<div class = "col-sm">
 <h5>Autonomous</h5>
-<button onclick="scoreUp('blue', 2)">Bottom</button>
-<button onclick="scoreUp('blue', 4)">Outer</button>
-<button onclick="scoreUp('blue', 6)">Inner</button>
+<button onclick="scoreUp('blue', 2); autonLimit('blue')">Bottom</button>
+<button onclick="scoreUp('blue', 4); autonLimit('blue')">Outer</button>
+<button onclick="scoreUp('blue', 6); autonLimit('blue')">Inner</button>
 		</div>
 		<div class = "col-sm">
 <h5>Driver Control</h5>
-<button onclick="scoreUp('blue', 1)">Bottom</button>
-<button onclick="scoreUp('blue', 2)">Outer</button>
-<button onclick="scoreUp('blue', 3)">Inner</button>
+<button onclick="scoreUp('blue', 1); stage2Limit('blue')'; console.log(blueBalls);">Bottom</button>
+<button onclick="scoreUp('blue', 2); stage2Limit('blue')">Outer</button>
+<button onclick="scoreUp('blue', 3); stage2Limit('blue')">Inner</button>
 		</div>
 		<div class = "col-sm">
 <h5>Shield Generator</h5>
@@ -91,27 +91,55 @@ let blueScore = 0;
 let blueBalls = 0;
 let redRanking = 0;
 let blueRanking = 0;
+
 let robotsClimbedRed = 0;
 let robotsClimbedBlue = 0;
 let isBalancedRed = false;
 let isBalancedBlue = false;
+
 let stage2FinishedRed = false;
 let stage3FinishedRed = false;
 let stage2FinishedBlue = false;
 let stage3FinishedBlue = false;
+
+let queue = {};
+
+function autonLimit(alignment) {
+if(alignment == 'red') {
+	if(redBalls > 9) {
+	redBalls -= 1;
+	}
+}
+else if(alignment == 'blue') {
+	if(blueBalls > 9) {
+	blueBalls -= 1;
+	}
+}
+}
+
+function stage2Limit(alignment) {
+if(alignment == 'red' && stage2FinishedRed == false) {
+	if(redBalls > 29) {
+	redBalls -= 1;
+	}
+}
+else if(alignment == 'blue' && stage2FinishedBlue == false) {
+	if(blueBalls > 29) {
+	blueBalls -= 1;
+	}
+}
+}
 
 function scoreUp(alignment, num) {
 	if(alignment == 'red') {
 		redScore += num;
 		redBalls += 1;
 		document.getElementById("redS").innerHTML = "Red Score: " + redScore;
-		console.log(redScore + " num");
 	}
 	else if(alignment == 'blue') {
 		blueScore += num;
 		blueBalls += 1;
 		document.getElementById("blueS").innerHTML = "Blue Score: " + blueScore;
-		console.log(blueScore + " num");
 	}
 }
 
