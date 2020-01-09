@@ -8,6 +8,7 @@
 <body onload = "updateScore()">
 <style>
 body {background-color: #d1d1e0; margin-bottom: 150;}
+div {margin-bottom: 100;}
 </style>
 <div class = "container-fluid">
 	<div class = "row justify-content-md-center">
@@ -19,15 +20,15 @@ body {background-color: #d1d1e0; margin-bottom: 150;}
 	<div class = "row">
 		<div class = "col-sm">
 <h5>Autonomous</h5>
-<button onclick="scoreUp('red', 2); autonLimit('red')">Bottom</button>
-<button onclick="scoreUp('red', 4); autonLimit('red')">Outer</button>
-<button onclick="scoreUp('red', 6); autonLimit('red')">Inner</button>
+<button onclick="autonScore('red', 2); console.log(redBalls)">Bottom</button>
+<button onclick="autonScore('red', 4)">Outer</button>
+<button onclick="autonScore('red', 6)">Inner</button>
 		</div>
 		<div class = "col-sm">
 <h5>Driver Control</h5>
-<button onclick="scoreUp('red', 1); stage2Limit('red'); console.log(redBalls)">Bottom</button>
-<button onclick="scoreUp('red', 2); stage2Limit('red')">Outer</button>
-<button onclick="scoreUp('red', 3); stage2Limit('red')">Inner</button>
+<button onclick="teleopScore('red', 1)">Bottom</button>
+<button onclick="teleopScore('red', 2)">Outer</button>
+<button onclick="teleopScore('red', 3)">Inner</button>
 		</div>
 		<div class = "col-sm">
 <h5>Shield Generator</h5>
@@ -41,8 +42,8 @@ body {background-color: #d1d1e0; margin-bottom: 150;}
 		</div>
 		<div class = "col-sm">
 <h5>Penalties</h5>
-<button onclick="scoreUp('blue', 3)">Foul</button>
-<button onclick="scoreUp('blue', 15)">Tech Foul</button>
+<button onclick="penalty('blue', 3)">Foul</button>
+<button onclick="penalty('blue', 15)">Tech Foul</button>
 		</div>
 	</div>
 </div>
@@ -56,15 +57,15 @@ body {background-color: #d1d1e0; margin-bottom: 150;}
 	<div class = "row">
 		<div class = "col-sm">
 <h5>Autonomous</h5>
-<button onclick="scoreUp('blue', 2); autonLimit('blue')">Bottom</button>
-<button onclick="scoreUp('blue', 4); autonLimit('blue')">Outer</button>
-<button onclick="scoreUp('blue', 6); autonLimit('blue')">Inner</button>
+<button onclick="autonLimit('blue', 2)">Bottom</button>
+<button onclick="autonLimit('blue', 4)">Outer</button>
+<button onclick="autonLimit('blue', 6)">Inner</button>
 		</div>
 		<div class = "col-sm">
 <h5>Driver Control</h5>
-<button onclick="scoreUp('blue', 1); stage2Limit('blue')'; console.log(blueBalls);">Bottom</button>
-<button onclick="scoreUp('blue', 2); stage2Limit('blue')">Outer</button>
-<button onclick="scoreUp('blue', 3); stage2Limit('blue')">Inner</button>
+<button onclick="teleopScore('blue', 1)">Bottom</button>
+<button onclick="teleopScore('blue', 2)">Outer</button>
+<button onclick="teleopScore('blue', 3)">Inner</button>
 		</div>
 		<div class = "col-sm">
 <h5>Shield Generator</h5>
@@ -78,8 +79,15 @@ body {background-color: #d1d1e0; margin-bottom: 150;}
 		</div>
 		<div class = "col-sm">
 <h5>Penalties</h5>
-<button onclick="scoreUp('red', 3)">Foul</button>
-<button onclick="scoreUp('red', 15)">Tech Foul</button>
+<button onclick="penalty('red', 3)">Foul</button>
+<button onclick="penalty('red', 15)">Tech Foul</button>
+		</div>
+	</div>
+</div>
+<div class = "container-fluid">
+	<div class = "row justify-content-md-center">
+		<div class = "col col-lg-2">
+<button onclick="undo(); console.log(redBalls)">Undo</button>
 		</div>
 	</div>
 </div>
@@ -102,17 +110,26 @@ let stage3FinishedRed = false;
 let stage2FinishedBlue = false;
 let stage3FinishedBlue = false;
 
-let queue = {};
+let alignmentQ = [];
+let pointQ = [];
+let ballQ = [];
+let rankQ = [];
+let queue = {alignmentQ, pointQ, ballQ, rankQ};
+
+let autonLimited = false;
+let teleopLimited = false;
 
 function autonLimit(alignment) {
 if(alignment == 'red') {
 	if(redBalls > 9) {
 	redBalls -= 1;
+	autonLimited = true;
 	}
 }
 else if(alignment == 'blue') {
 	if(blueBalls > 9) {
 	blueBalls -= 1;
+	autonLimited = true;
 	}
 }
 }
@@ -121,11 +138,13 @@ function stage2Limit(alignment) {
 if(alignment == 'red' && stage2FinishedRed == false) {
 	if(redBalls > 29) {
 	redBalls -= 1;
+	teleopLimited = true;
 	}
 }
 else if(alignment == 'blue' && stage2FinishedBlue == false) {
 	if(blueBalls > 29) {
 	blueBalls -= 1;
+	teleopLimited = true;
 	}
 }
 }
@@ -165,13 +184,32 @@ function rankingUp(alignment) {
 	}
 }
 
+function rankingDown(alignment) {
+	if(alignment == 'red') {
+	redRanking -= 1;
+	document.getElementById("redR").innerHTML = "Red Ranking: " + redRanking;
+	}
+	else if(alignment == 'blue') {
+	blueRanking -= 1;
+	document.getElementById("blueR").innerHTML = "Blue Ranking: " + blueRanking;
+	}
+}
+
 function climbRobot(alignment){
 if(alignment == 'red') {
 	if(robotsClimbedRed < 3) {
 	robotsClimbedRed += 1;
 	scoreUp('red', 25);
+	redBalls -= 1;
+	alignmentQ.push('red');
+	pointQ.push(25);
+	ballQ.push(0);
 	if(robotsClimbedRed > 2 && isBalancedRed == false) {
 		rankingUp('red');
+		rankQ.push(1);
+	}
+	else {
+		rankQ.push(0);
 	}
 	}
 }
@@ -179,8 +217,16 @@ else if(alignment == 'blue') {
 	if(robotsClimbedBlue < 3) {
 	robotsClimbedBlue += 1;
 	scoreUp('blue', 25);
+	blueBalls -= 1;
+	alignmentQ.push('blue');
+	pointQ.push(25);
+	ballQ.push(0);
 	if(robotsClimbedBlue > 2 && isBalancedBlue == false) {
 		rankingUp('blue');
+		rankQ.push(1);
+	}
+	else {
+		rankQ.push(0);
 	}
 	}
 }
@@ -191,8 +237,16 @@ if(alignment == 'red') {
 	if(isBalancedRed == false && robotsClimbedRed > 0) {
 	isBalancedRed = true;
 	scoreUp('red', 15);
+	redBalls -= 1;
+	alignmentQ.push('red');
+	pointQ.push(15);
+	ballQ.push(0);
 	if(robotsClimbedRed == 2) {
 		rankingUp('red');
+		rankQ.push(1);
+	}
+	else {
+		rankQ.push(0);
 	}
 	}
 }
@@ -200,8 +254,16 @@ else if(alignment == 'blue') {
 	if(isBalancedBlue == false && robotsClimbedBlue > 0) {
 	isBalancedBlue = true;
 	scoreUp('blue', 15);
+	blueBalls -= 1;
+	alignmentQ.push('blue');
+	pointQ.push(15);
+	ballQ.push(0);
 	if(robotsClimbedBlue == 2) {
 		rankingUp('blue');
+		rankQ.push(1);
+	}
+	else {
+		rankQ.push(0);
 	}
 	}
 }
@@ -213,6 +275,10 @@ if(alignment == 'red') {
 		stage2FinishedRed = true; 
 		scoreUp('red', 10);
 		redBalls -= 1;
+		alignmentQ.push('red');
+		pointQ.push(10);
+		ballQ.push(0);
+		rankQ.push(0);
 	}
 }
 else if(alignment == 'blue') {
@@ -220,6 +286,10 @@ else if(alignment == 'blue') {
 		stage2FinishedBlue = true; 
 		scoreUp('blue', 10);
 		blueBalls -= 1;
+		alignmentQ.push('blue');
+		pointQ.push(10);
+		ballQ.push(0);
+		rankQ.push(0);
 	}
 }
 }
@@ -231,6 +301,10 @@ if(alignment == 'red') {
 		scoreUp('red', 20);
 		redBalls -= 1;
 		rankingUp('red');
+		alignmentQ.push('red');
+		pointQ.push(20);
+		ballQ.push(0);
+		rankQ.push(1);
 	}
 }
 else if(alignment == 'blue') {
@@ -239,8 +313,112 @@ else if(alignment == 'blue') {
 		scoreUp('blue', 20);
 		redBalls -= 1;
 		rankingUp('blue');
+		alignmentQ.push('blue');
+		pointQ.push(20);
+		ballQ.push(0);
+		rankQ.push(1);
 	}
 }
+}
+
+function autonScore(alignment, point) {	
+	scoreUp(alignment, point); 
+	autonLimit(alignment);
+	alignmentQ.push(alignment);
+	pointQ.push(point);
+	rankQ.push(0);
+	if(autonLimited == true) {
+		ballQ.push(0);
+		autonLimited = false;
+	}
+	else {
+		ballQ.push(1);
+	}
+}
+
+function teleopScore(alignment, point) {
+	scoreUp(alignment, point);
+	stage2Limit(alignment);
+	alignmentQ.push(alignment);
+	pointQ.push(point);
+	rankQ.push(0);
+	if(teleopLimited == true) {
+		ballQ.push(0);
+		teleopLimited = false;
+	}
+	else {
+		ballQ.push(1);
+	}
+}
+
+function penalty(alignment, point) {
+	scoreUp(alignment, point);
+	if(alignment == 'red') {
+		redBalls -= 1;
+	}
+	else if(alignment == 'blue') {
+		blueBalls -= 1;
+	}
+	alignmentQ.push(alignment);
+	pointQ.push(point);
+	rankQ.push(0);
+	ballQ.push(0);
+}
+
+function undo() {
+	let a = alignmentQ.pop();
+	let b = pointQ.pop();
+	let c = ballQ.pop();
+	let d = rankQ.pop();
+	console.log(a + b + c + d);
+	if(a == 'red') {
+		scoreUp('red', -b);
+		if(c == 1) {
+			redBalls -= 2;
+		}
+		else if(c == 0) {
+			redBalls -= 1;
+		}
+		if(redBalls < 29) {
+			stage2FinishedRed = false;
+		}
+		if(redBalls < 49) {
+			stage3FinishedRed = false;
+		}
+		if(b == 15) {
+			isBalancedRed = false;
+		}
+		if(b == 25) {
+			robotsClimbedRed -= 1;
+		}
+		if(d == 1) {
+			rankingDown('red');
+		}
+	}
+	else if(a == 'blue') {
+		scoreUp('blue', -b);
+		if(c == 1) {
+			blueBalls -= 2;
+		}
+		else if(c == 0) {
+			blueBalls -= 1;
+		}
+		if(blueBalls < 29) {
+			stage2FinishedBlue = false;
+		}
+		if(blueBalls < 49) {
+			stage3FinishedBlue = false;
+		}
+		if(b == 15) {
+			isBalancedBlue = false;
+		}
+		if(b == 25) {
+			robotsClimbedBlue -= 1;
+		}
+		if(d == 1) {
+			rankingDown('blue');
+		}
+	}
 }
 
 function updateScore() {
