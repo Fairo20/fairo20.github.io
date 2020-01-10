@@ -379,7 +379,10 @@ function redo() {
 	let b = pointReverseQ.pop();
 	let c = ballReverseQ.pop();
 	let d = rankReverseQ.pop();
-	
+if(isNaN(b)) {
+
+}
+else {
 	alignmentQ.push(a);
 	pointQ.push(b);
 	ballQ.push(c);
@@ -427,6 +430,7 @@ function redo() {
 		if(d == 1) {
 			rankingUp('blue');
 		}
+	}
 	}
 }
 
