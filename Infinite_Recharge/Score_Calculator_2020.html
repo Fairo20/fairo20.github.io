@@ -89,6 +89,9 @@ div {margin-bottom: 100;}
 		<div class = "col col-lg-2">
 <button onclick="undo(); console.log(redBalls)">Undo</button>
 		</div>
+		<div class = "col col-lg-2">
+<button onclick="redo(); console.log(redBalls)">Redo</button>
+		</div>
 	</div>
 </div>
 <script>
@@ -115,6 +118,12 @@ let pointQ = [];
 let ballQ = [];
 let rankQ = [];
 let queue = {alignmentQ, pointQ, ballQ, rankQ};
+
+let alignmentReverseQ = [];
+let pointReverseQ = [];
+let ballReverseQ = [];
+let rankReverseQ = [];
+let reverseQueue = {alignmentReverseQ, pointReverseQ, ballReverseQ, rankReverseQ};
 
 let autonLimited = false;
 let teleopLimited = false;
@@ -365,11 +374,73 @@ function penalty(alignment, point) {
 	ballQ.push(0);
 }
 
+function redo() {
+	let a = alignmentReverseQ.pop();
+	let b = pointReverseQ.pop();
+	let c = ballReverseQ.pop();
+	let d = rankReverseQ.pop();
+	
+	alignmentQ.push(a);
+	pointQ.push(b);
+	ballQ.push(c);
+	rankQ.push(d);
+
+	console.log(a + b + c + d);
+	if(a == 'red') {
+		scoreUp('red', b);
+		if(c == 0) {
+			redBalls -= 1;
+		}
+		if(redBalls >= 29) {
+			stage2FinishedRed = true;
+		}
+		if(redBalls >= 49) {
+			stage3FinishedRed = true;
+		}
+		if(b == 15) {
+			isBalancedRed = true;
+		}
+		if(b == 25) {
+			robotsClimbedRed += 1;
+		}
+		if(d == 1) {
+			rankingUp('red');
+		}
+	}
+	else if(a == 'blue') {
+		scoreUp('blue', b);
+		if(c == 0) {
+			blueBalls -= 1;
+		}
+		if(blueBalls >= 29) {
+			stage2FinishedBlue = true;
+		}
+		if(blueBalls >= 49) {
+			stage3FinishedBlue = true;
+		}
+		if(b == 15) {
+			isBalancedBlue = true;
+		}
+		if(b == 25) {
+			robotsClimbedBlue += 1;
+		}
+		if(d == 1) {
+			rankingUp('blue');
+		}
+	}
+}
+
 function undo() {
 	let a = alignmentQ.pop();
 	let b = pointQ.pop();
 	let c = ballQ.pop();
 	let d = rankQ.pop();
+	
+	alignmentReverseQ.push(a);
+	pointReverseQ.push(b);
+	ballReverseQ.push(c);
+	rankReverseQ.push(d);
+
 	console.log(a + b + c + d);
 	if(a == 'red') {
 		scoreUp('red', -b);
