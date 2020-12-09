@@ -15,6 +15,7 @@
 				.then(response => response.text())
 				.then(str => new window.DOMParser().parseFromString(str, "text/xml"))
 				.then(data => {console.log(data);
+								console.log(data.querySelecctorAll('item'));
 								let items = data.querySelecctorAll('item');
 								let html = '';
 								items.forEach(el => {
