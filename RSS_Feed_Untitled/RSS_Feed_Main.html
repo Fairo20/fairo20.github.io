@@ -17,7 +17,7 @@
 											.find("item")
 											.each(function(){
 												const el = $(this);
-												const template = '<p><img src="${el.find("link").text()}/image/large.png" alt=""}><h2><a href = "${el.find("link").text()}" target="_blank" rel="noopener"> ${el.find("title").text()}</a></h2></p>';
+												const template = '<p><img src="${el.find("link").text()}/image/large.png" alt=""><h2><a href = "${el.find("link").text()}" target="_blank" rel="noopener"> ${el.find("title").text()}</a></h2></p>';
 												document.body.insertAdjacentHTML("afterend", template);
 											})
 										}
