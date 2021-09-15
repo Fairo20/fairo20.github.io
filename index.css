@@ -1,12 +1,41 @@
 body {
-  background-color: navy;
+  background-color: #53657F;
 }
 
 h1 {
   color: white;
-  text-align: center;
 }
 
-div {
-	align-items: center;
+.fullWrapper:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.titleWrapper {
+	float: left;
+	width: 50%;
+	text-align: center;
+	font-size: 40px;
+}
+
+.projectsWrapper {
+    color: white;
+	font-size: 30px;
+	text-align: left;
+	margin-left: 50px;
+}	
+
+.link {
+	color: white;
+}
+
+.projectDescrip {
+	font-size: 20px;
+}
+
+.aboutDescrip {
+	font-size: 20px;
+	text-align: left;
+	margin-right: 50px;
 }
