@@ -22,8 +22,8 @@ h1 {
 .projectsWrapper {
     color: white;
 	font-size: 30px;
-	text-align: left;
-	margin-left: 50px;
+	text-align: center;
+	margin-left: 10px;
 }	
 
 .link {
@@ -32,10 +32,29 @@ h1 {
 
 .projectDescrip {
 	font-size: 20px;
+	text-align: center;
 }
 
 .aboutDescrip {
 	font-size: 20px;
-	text-align: left;
-	margin-right: 50px;
+	text-align: center;
+	margin-left: 30px;
+}
+
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
 }
