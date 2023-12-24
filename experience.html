@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-mode">
+	<head>
+		<title>About Me</title>
+		<link rel="stylesheet" href="index_dark.css">
+	</head>
+	<body>
+	<nav>
+        <ul class="navigation">
+            <li><a href="index_v2.html" class="navbar"> Home </a></li>
+            <li><a href="about_me.html" class="navbar"> About Me </a></li>
+            <li><a href="projects.html" class="navbar"> Projects </a></li>
+            <li><a href="experience.html" class="navbar"> Experience </a></li>
+            <li><a href="ResumeFall2023.pdf" target="_blank" class="navbar">Resume</a></li>
+        </ul>
+	</nav>
+    <button type="button" id="lightModeToggle"></button>
+	<h1> Experience </h1>
+        <div class="projectsWrapper">
+            Relevant Work Experience
+            <div class="aboutDescrip">
+                Undergraduate Researcher: Fall 2023 - Present <br />
+                Fujitsu R&D Internship: Summer 2023 <br />
+                Undergraduate Research Assistant: Fall 2022 - Spring 2023 <br />
+                Reynolds & Reynolds Parts Technician: Fall 2021 - Spring 2022 <br />
+            </div>
+        </div>
+        <br></br>
+        <div class="projectsWrapper">
+            Programming Experience
+            <div class="aboutDescrip">
+                C++ (8 years) <br />
+                Java (5 years) <br />
+                Javascript/HTML (4 years) <br />
+                Python (3 years) <br />
+            </div>
+        </div>
+        <br></br>
+        <div class="projectsWrapper">
+            Other Skills & Experiences
+            <div class="aboutDescrip">
+                Robotics Experience (10 years) <br />
+                Project Management (7 years) <br />
+                French (3 years) <br />
+                Japanese (3 years) <br />
+                Debate (2 years) <br />
+            </div>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+            const lightModeToggle = document.getElementById('lightModeToggle');
+            const body = document.body;
+    
+            const isLightMode = sessionStorage.getItem('lightMode') === 'true';
+    
+            if (isLightMode) {
+                body.classList.add('light-mode');
+                lightModeToggle.innerHTML = 'Toggle Dark Mode';
+            }
+            else {
+                lightModeToggle.innerHTML = 'Toggle Light Mode';
+            }
+    
+            lightModeToggle.addEventListener('click', () => {
+                body.classList.toggle('light-mode');
+                const isLightModeNow = body.classList.contains('light-mode');
+                if(isLightModeNow) {
+                    lightModeToggle.innerHTML = 'Toggle Dark Mode';
+                }
+                else  {
+                    lightModeToggle.innerHTML = 'Toggle Light Mode';
+                }
+                sessionStorage.setItem('lightMode', isLightModeNow);
+            });
+        });
+        </script>
+	</body>
+</html>

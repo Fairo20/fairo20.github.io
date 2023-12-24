@@ -1,0 +1,178 @@
+/* dark mode */
+body {
+    background-color: #53657F;
+    color: #ffffff;
+}
+
+a.link:link {
+    color: #FFFDD0;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a.link:visited {
+    color: #FFFDD0;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a.link:hover {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a.navbar:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a.navbar:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a.navbar:hover {
+    color: #53657F;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+nav {
+    background: #555753;
+}
+
+
+/*light mode*/
+body.light-mode {
+    background-color: #eee4c0;
+    color: #000000;
+}
+
+.light-mode a.link:link {
+    color: #5c573e;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.light-mode a.link:visited {
+    color: #5c573e;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.light-mode a.link:hover {
+    color: #53657F;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.light-mode a.navbar:link {
+    color: #eee4c0;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.light-mode a.navbar:visited {
+    color: #eee4c0;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.light-mode a.navbar:hover {
+    color: #53657F;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.light-mode nav {
+    background: #677e81;
+}
+
+/* general */
+
+#lightModeToggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.projectsWrapper {
+	font-size: 30px;
+	text-align: center;
+    text-justify: auto;
+	/* margin-left: 10px; */
+}	
+
+.projectDescrip {
+	font-size: 20px;
+	text-align: justify;
+    text-justify: auto;
+	/* margin-left: 10px; */
+}	
+
+.aboutDescrip {
+	font-size: 20px;
+	text-align: center;
+    text-justify: auto;
+	/* margin-left: 30px; */
+}
+
+h1 {
+    margin: 3% 0 0 0;
+    font-size: 45px;
+    text-align: center;
+}
+
+ul {
+	width: 30%;
+	font-size: 30px;
+	text-align: justify;
+	position: relative;
+}
+
+li {
+	display: block;
+	float: left;
+	position: relative;
+}
+
+li a {
+	display: block;
+	text-align: center;
+	padding: 10px 10px;
+	position: relative;
+}
+
+span {
+    font-size: 20px;
+    border: 1% 1% 1% 1%;
+}
+
+img {
+    float: left;
+    padding: 1% 1% 1% 1%;
+}
+
+nav {
+	text-align: left;
+	letter-spacing: 3px;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.navigation {
+	display: inline;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.navbar {
+	font-size: 20px;
+}
