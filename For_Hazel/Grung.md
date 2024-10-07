@@ -1,0 +1,4 @@
+- **Size**: Medium
+- **Speed**: 25 feet walking
+- **Consuming Beast**: The Beastral races passively feed off of divine magic and its power can surge into them. When affected by a healing spell, you have advantage on your next d20 roll as the divine magic surges through you.
+- 
