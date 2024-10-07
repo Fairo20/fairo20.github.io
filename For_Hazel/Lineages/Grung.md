@@ -1,6 +1,6 @@
 - **Size**: Medium
 - **Speed**: 25 feet walking
-- **Consuming Beast**: The Beastral races passively feed off of divine magic and its power can surge into tnhem. When affected by a healing spell, you have advantage on your next d20 roll as the divine magic surges through you.
+- **Consuming Beast**: The Beastral races passively feed off of divine magic and its power can surge into them. When affected by a healing spell, you have advantage on your next d20 roll as the divine magic surges through you.
 - **Amphibious Creature**: You may breathe normally in air and water.
 - Sub-lineage
 	- Poison Dart Grung
@@ -8,6 +8,6 @@
 		- **Poisonous Secretion**: Your body secrets a toxic slime. If you touch a creature, or a creature touches you, they may make a Constitution saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failure, they take 1d4 poison damage are poisoned for one minute. They may repeat this save at the end of each of their turns. You may also use an Action to coat a weapon of your choosing in this slime, lasting for 1 minute and causing the same saving throw and effect. 
 	- Tree Grung
 		- **Frog Hop**: Your long jump is 25ft and your high jump is 15ft, with or without a running start. In addition, you may use your Bonus Action to long jump or high jump.
-		- **Vicious Tongue**: When you take the Attack action on yoru turn, you can replace one of your attacks with a tongue lash or a tongue slam. 
-			- *Tongue Lash*: You may only use this attack if you are not grappling an enemy. The lash attack can be made with your Dexterity or Strength modifier (your choice), and on a successful attack, the target takes 2d10 slashing damage and is grappled (escape DC = 8 + your Constitution modifier + your proficiency bonus).
+		- **Vicious Tongue**: When you take the Attack action on yoru turn, you can replace one of your attacks with a tongue lash or a tongue slam. These attacks' damage increases by 1d10 when you reach 5th, 11th, and 17th level. You may use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.
+			- *Tongue Lash*: You may only use this attack if you are not grappling an enemy. The lash attack can be made with your Dexterity or Strength modifier (your choice), and on a successful attack, the target takes 2d10 slashing damage and is grappled (escape DC = 8 + your Constitution modifier + your proficiency bonus). 
 			- *Tongue Slam*: You may only use this attack if you are grappling an enemy. The grappled creature must make a Constitution saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes 2d10 bludgeoning damage and has disadvantage on their next attempt to break the grapple.
