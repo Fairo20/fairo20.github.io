@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-mode">
+	<head>
+		<title>About Me</title>
+		<link rel="stylesheet" href="index_dark.css">
+	</head>
+	<body>
+	<nav>
+        <ul class="navigation">
+            <li><a href="index.html" class="navbar"> Home </a></li>
+            <li><a href="about_me.html" class="navbar"> About Me </a></li>
+            <li><a href="projects.html" class="navbar"> Projects </a></li>
+            <li><a href="experience.html" class="navbar"> Experience </a></li>
+            <li><a href="ResumeSpring2024.pdf" target="_blank" class="navbar">Resume</a></li>
+        </ul>
+	</nav>
+    <button type="button" id="lightModeToggle"></button>
+	<h1> About Me </h1>
+        <div class="projectsWrapper">
+            About Me
+            <div class="aboutDescrip">
+                I am a senior Computer Science student at Texas A&M University. I am currently leading a research project within Dr. Roger Pearce's lab. In the past I was an R&D intern at Fujitsu, the Embedded Systems Lead of the TAMU Robomasters team, the IT Director for the Aggie Society of Anime and Manga Art, and Dr. Xingyong Song's Autonomous Vehicles Lab. I am currently looking for full-time employment. For further information, feel free to contact me at CRNicholls20@gmail.com, or through my <a href="https://www.linkedin.com/in/connor-nicholls/" target="_blank" class="link"> LinkedIn page</a>. Thank you for taking the time to visit my website!
+            <br></br></div>
+            <div class="aboutDescrip">
+                Outside of work, I enjoy <a href="Manga_List/MangaList.html" target="_blank" class="link">reading</a>, rock climbing, cooking, chess, TTRPGs, and fighting games. 
+            </div>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+            const lightModeToggle = document.getElementById('lightModeToggle');
+            const body = document.body;
+    
+            const isLightMode = sessionStorage.getItem('lightMode') === 'true';
+    
+            if (isLightMode) {
+                body.classList.add('light-mode');
+                lightModeToggle.innerHTML = 'Toggle Dark Mode';
+            }
+            else {
+                lightModeToggle.innerHTML = 'Toggle Light Mode';
+            }
+    
+            lightModeToggle.addEventListener('click', () => {
+                body.classList.toggle('light-mode');
+                const isLightModeNow = body.classList.contains('light-mode');
+                if(isLightModeNow) {
+                    lightModeToggle.innerHTML = 'Toggle Dark Mode';
+                }
+                else  {
+                    lightModeToggle.innerHTML = 'Toggle Light Mode';
+                }
+                sessionStorage.setItem('lightMode', isLightModeNow);
+            });
+        });
+        </script>
+	</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Home</title>
+		<link rel="stylesheet" href="index_dark.css">
+	</head>
+	<body>
+	<nav>
+	<ul class="navigation">
+	<li><a href="index.html" class="navbar"> Home </a></li>
+	<li><a href="about_me.html" class="navbar"> About Me </a></li>
+	<li><a href="projects.html" class="navbar"> Projects </a></li>
+    <li><a href="experience.html" class="navbar"> Experience </a></li>
+    <li><a href="ResumeSpring2024.pdf" target="_blank" class="navbar">Resume</a></li>
+    </ul>
+	</nav>
+	<button id="lightModeToggle"></button>
+	<h1 class="main"> Connor Nicholls </h1>
+    <img src="IMG_0028.JPG" alt="Headshot of myself" width="418" height="357.5">
+	<span> <br>Welcome to my website! I am a senior Computer Science major at Texas A&M University with an interest in back-end development, embedded systems, code design and optimization, and game design. If you have any questions or inquiries, please feel free to reach out!</span>
+	<script>
+        document.addEventListener('DOMContentLoaded', function () {
+        const lightModeToggle = document.getElementById('lightModeToggle');
+        const body = document.body;
+
+        const isLightMode = sessionStorage.getItem('lightMode') === 'true';
+
+        if (isLightMode) {
+            body.classList.add('light-mode');
+            lightModeToggle.innerHTML = 'Toggle Dark Mode';
+        }
+        else {
+            lightModeToggle.innerHTML = 'Toggle Light Mode';
+        }
+
+        lightModeToggle.addEventListener('click', () => {
+            body.classList.toggle('light-mode');
+            const isLightModeNow = body.classList.contains('light-mode');
+            if(isLightModeNow) {
+                lightModeToggle.innerHTML = 'Toggle Dark Mode';
+            }
+            else  {
+                lightModeToggle.innerHTML = 'Toggle Light Mode';
+            }
+            sessionStorage.setItem('lightMode', isLightModeNow);
+        });
+    });
+	</script>
+	</body>
+</html>
