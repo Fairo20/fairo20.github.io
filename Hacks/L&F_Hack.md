@@ -16,7 +16,7 @@ You are a duelist in New Duel City. Your mission is to explore the city, collect
 4. Choose your Deck Master
 
 | Deck Master Generator | Monster Type | Monster Class           |
-| --------------------- | ------------ | ----------------------- |
+| :---------------------|:------------:| -----------------------:|
 | 1                     | Dragon       | Ancient God             |
 | 2                     | Machine      | Wicked Avatar           |
 | 3                     | Warrior      | Signature Series        |
@@ -84,14 +84,17 @@ Roll or choose on the tables below.
 | 1.A sentient card               | 4.Crazy CEO          |
 | 2.Criminal organization         | 5.Worldly god        |
 | 3.Rogue dueling gang            | 6.Rogue AI           |
+|----
 | Want(s) to                      |                      |
 | 1.Control                       | 4.Repair/Fix         |
 | 2.Destroy                       | 5.Rig                |
 | 3.Protect                       | 6.Win                |
+|----
 | The                             |                      |
 | 1.Big Tournament                | 4.Government         |
 | 2.City                          | 5.Dueling Academy    |
 | 3.Cyberverse                    | 6.Universe           |
+|----
 | Which will                      |                      |
 | 1.Destroy the planet            | 4.Grant untold power |
 | 2.Ban dueling                   | 5.Make them rich     |
