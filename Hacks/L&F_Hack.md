@@ -30,9 +30,9 @@ You are a duelist in New Duel City. Your mission is to explore the city, collect
 
 When you do something risky, roll 1d6 to find out how it goes. Roll +1d if you’re prepared and +1d if you’re an expert. (The GM tells you how many dice to roll, based on your character and the situation.) Roll your dice and compare each die result to your number.
 
-⇧If you’re using Cards (described here __________,) you want to roll under your number
+⇧If you’re using Cards, you want to roll under your number
 
-⇩If you’re using Motorcycles (described here __________,) you want to roll over your number.
+⇩If you’re using Motorcycles, you want to roll over your number.
 
 0: If none of your dice succeed, it goes wrong. The GM says how things get worse somehow.
 
@@ -57,20 +57,28 @@ At the start of a duel, both duelists have 8000 Life Points. Both duelists roll 
 
 ## Sample Duel
 Duelists A and B, both intermediate duelists who will roll 2 dice for each skill, enter a duel, and A goes first. 
+
 Turn 1: A rolls Motorcycle and succeeds with both dice, going to 2 laps. B rolls Motorcycle and succeeds with both dice, going to 2 laps. 
+
 Turn 2: A rolls Cards and succeeds with 1 die, reducing B to 7000 LP. B rolls Motorcycle and succeeds with both dice, going to 4 laps. 
+
 Turn 3: A rolls Cards and succeeds with both dice, reducing B to 5000 LP. B rolls Motorcycle and succeeds with both dice, going to 6 laps. 
+
 Turn 4: A rolls Motorcycle and succeeds with both dice, advancing to 4 laps. B rolls Cards and succeeds with one die, reducing A to 6000 LP.
+
 Turn 5: A rolls Motorcycle and succeeds with both dice, advancing to 6 laps. B rolls Motorcycle and succeeds with two dice, advancing to 8 laps. 
+
 Turn 6: A rolls Motorcycle and succeeds with one die, advancing to 7 laps. B rolls Cards and succeeds with two dice, reducing A to 2000 LP.
+
 Turn 7: A rolls Motorcycle and gets a success and a Cards on Motorcycles, advancing to 9 laps and reducing B to 3000 LP. B rolls Motorcycle and fails, staying at 8 laps.
+
 Turn 8: A rolls Cards and succeeds with one die, reducing B to 1000 LP. B rolls Cards and gets a Cards on Motorcycles, advancing to 9 laps and reducing A to 1000 LP.
+
 Turn 9: A rolls Cards and gets a Cards on Motorcycles, advacing to 10 laps and reducing B to 0 LP. A wins!
 # GM: Run the Game
 
 Roll or choose on the tables below.
 
-|                                 |                      |
 | ------------------------------- | -------------------- |
 | A Threat                        |                      |
 | 1.A sentient card               | 4.Crazy CEO          |
