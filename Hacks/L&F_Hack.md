@@ -15,15 +15,16 @@ You are a duelist in New Duel City. Your mission is to explore the city, collect
     
 4. Choose your Deck Master
 
-|---
 | Deck Master Generator | Monster Type | Monster Class           |
-|-|-|-
+|-----------------------|--------------|-------------------------|
 | 1                     | Dragon       | Ancient God             |
 | 2                     | Machine      | Wicked Avatar           |
 | 3                     | Warrior      | Signature Series        |
 | 4                     | Spellcaster  | Little Guy              |
 | 5                     | Beast        | Anime Character         |
 | 6                     | Plant        | Real Thing in the World |
+
+
 - Name your **character** and your **Deck Master**.
 - **Player Goal** - Choose one or create your own: **Earn Money**, Best **a Rival**, **Defeat a Threat**, **Become the Best**, **Prove Yourself**, **Avenge Someone**
 - **Traits** - Choose 2 **strengths** (wise, smart, resilient, trained, charismatic, sexy, cooperative, caring, driven) and 1 **flaw** (stubborn, naive, faithless, distrustful, unreliable, overconfident)
