@@ -15,6 +15,7 @@ You are a duelist in New Duel City. Your mission is to explore the city, collect
     
 4. Choose your Deck Master
 
+|-----------------------|--------------|-------------------------|
 | Deck Master Generator | Monster Type | Monster Class           |
 |-----------------------|--------------|-------------------------|
 | 1                     | Dragon       | Ancient God             |
