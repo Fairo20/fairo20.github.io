@@ -42,7 +42,13 @@ Gain a boon from the below list. You gain another boon at levels 5, 9, 13, and 1
 	- **Aegis Parry** - Whenever an enemy marked by you within 60ft attacks you, you may use your reaction to force them to roll at disadvantage.
 	- **Arcane Defender** - Whenever an enemy marked by you within 60ft forces you to make a saving throw, you can choose to make an Intelligence saving throw instead. You can only use this feature prof times per long rest.
 ### Level 3: Subclasses
-
+[[Order of the Ancestral Hero]]
+[[Order of the Archeomancer]]
+[[Order of the Divine Guardian]]
+[[Order of the Dragonshard]]
+[[Order of the Natural Defender]]
+[[Order of the Shadow Templar]]
+[[Order of the Starry Knight]]
 ### Level 3: Energizing Ward
 Whenever you are dealt damage by a marked target, your sword absorbs some of the energy and channels it back into you. You may gain temp HP equal to half the damage dealt, rounded down. You can use this feature proficiency bonus times per long rest.
 ### Level 4: ASI
