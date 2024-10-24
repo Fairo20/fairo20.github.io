@@ -42,13 +42,13 @@ Gain a boon from the below list. You gain another boon at levels 5, 9, 13, and 1
 	- **Aegis Parry** - Whenever an enemy marked by you within 60ft attacks you, you may use your reaction to force them to roll at disadvantage.
 	- **Arcane Defender** - Whenever an enemy marked by you within 60ft forces you to make a saving throw, you can choose to make an Intelligence saving throw instead. You can only use this feature prof times per long rest.
 ### Level 3: Subclasses
-(Order of the Ancestral Hero)['Subclasses/Order_of_the_Ancestral_Hero.html']
-(Order of the Archeomancer)['Subclasses/Order of the Archeomancer.html']
-(Order of the Divine Guardian)['./Subclasses/Order\ of\ the\ Divine\ Guardian.html']
-[[Order of the Dragonshard]]
-[[Order of the Natural Defender]]
-[[Order of the Shadow Templar]]
-[[Order of the Starry Knight]]
+[Order of the Ancestral Hero](https://fairo20.github.io/Swordmage/Subclasses/Order%20of%20the%20Ancestral%20Hero.html)
+[Order of the Archeomancer](https://fairo20.github.io/Swordmage/Subclasses/Order%20of%20the%20Archeomancer.html)
+[Order of the Divine Guardian](https://fairo20.github.io/Swordmage/Subclasses/Order%20of%20the%20Divine%20Guardian.html)
+[Order of the Dragonshard](https://fairo20.github.io/Swordmage/Subclasses/Order%20of%20the%20Dragonshard.html)
+[Order of the Natural Defender](https://fairo20.github.io/Swordmage/Subclasses/Order%20of%20the%20Natural%20Defender.html)
+[Order of the Shadow Templar](https://fairo20.github.io/Swordmage/Subclasses/Order%20of%20the%20Shadow%20Templar.html)
+[Order of the Starry Knight](https://fairo20.github.io/Swordmage/Subclasses/Order%20of%20the%20Starry%20Knight.html)
 ### Level 3: Energizing Ward
 Whenever you are dealt damage by a marked target, your sword absorbs some of the energy and channels it back into you. You may gain temp HP equal to half the damage dealt, rounded down. You can use this feature proficiency bonus times per long rest.
 ### Level 4: ASI
