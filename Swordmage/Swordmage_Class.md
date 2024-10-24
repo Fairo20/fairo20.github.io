@@ -42,9 +42,9 @@ Gain a boon from the below list. You gain another boon at levels 5, 9, 13, and 1
 	- **Aegis Parry** - Whenever an enemy marked by you within 60ft attacks you, you may use your reaction to force them to roll at disadvantage.
 	- **Arcane Defender** - Whenever an enemy marked by you within 60ft forces you to make a saving throw, you can choose to make an Intelligence saving throw instead. You can only use this feature prof times per long rest.
 ### Level 3: Subclasses
-[[Order of the Ancestral Hero]]
-[[Order of the Archeomancer]]
-[[Order of the Divine Guardian]]
+(Order of the Ancestral Hero)[./Subclasses/Order of the Ancestral Hero.md]
+(Order of the Archeomancer)['./Subclasses/Order of the Archeomancer.md']
+(Order of the Divine Guardian)[./Subclasses/Order\ of\ the\ Divine\ Guardian.md]
 [[Order of the Dragonshard]]
 [[Order of the Natural Defender]]
 [[Order of the Shadow Templar]]
