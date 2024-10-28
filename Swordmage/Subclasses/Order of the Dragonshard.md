@@ -1,38 +1,46 @@
 [Swordmage](https://fairo20.github.io/Swordmage/Swordmage_Class.html)
 
 ### Level 3
-#### Spells
-Choose your elemental affiliation when you select this subclass to depict the order of dragon knights you follow. Learn the associated spells.
+#### Elemental Affiliation
+You choose one type of dragon as the order of dragonshard you follow. This will affect which spells you learn and the damage type associated with your subclass features.
 
-| Level | Spells |
-| ----- | ------ |
-| 1     |        |
-| 2     |        |
-| 3     |        |
-| 4     |        |
-| 5     |        |
+| Dragon Color     | Damage Type |
+| ---------------- | ----------- |
+| Black, Copper    | Acid        |
+| Blue, Bronze     | Lightning   |
+| Brass, Gold, Red | Fire        |
+| Green            | Poison      |
+| Silver, White    | Cold        |
 
-#### Feature: Elemental Blade
-As a bonus action, you can activate your blade for one minute. While active, it takes on characteristics of your dragon order, as scales cover the blade and your element enshrouds it. Whenever you deal damage with your Elemental Blade, add 1d4 of your elemental affiliation to the damage. 
+#### Dragonshard Spells
+You learn additional spells when you learn spells of specific levels, as shown on the Dragonshard Magic table based on your Elemental Affiliation. Each spell counts as a Swordmage spell for you, but it doesn't count agains the number of Swordmage spells you know. These spells can't be replaced when you gain a level in this class.
 
-#### Feature: Draconic Armory
-When you activate your Elemental Blade, you gain access to your Draconic Armory, as the elemental energy from your blade covers your body. You gain resistance to the damage type of your elemental affiliation. In addition, reduce any damage you would take by your proficiency bonus.
+| Level | Acid | Lightning | Fire | Poison | Cold |
+| - | - | - | - | - | - |
+| 1 | Color Spray | Witch Bolt | Burning Hands | Ray of Sickness | Ice Knife |
+| 2 | Acid Arrow | *Static Burst* | Aganazzar's Scorcher | *Infestation* | Binding Ice |
+| 3 | *Acid Rain* | Lightning Bolt | Fireball | Stinking Cloud | Sleet Storm |
+| 4 | Vitriolic Sphere | Storm Sphere   | Wall of Fire         | *Infectious Plague* | Ice Storm |
+| 5 | *Dissolve* | *Storm Strike* | Immolation | Cloudkill | Cone of Cold |
+
+#### Feature: Dragonshard Blade
+As a bonus action, you can activate your blade for one minute. While active, it takes on characteristics of your dragon order, as scales cover the blade and your element enshrouds it. Whenever you deal damage with your Dragonshard Blade, add 1d6 of your elemental affiliation to the damage. 
+
+#### Feature: Elemental Burst
+When you deal damage with your Dragonshard Blade, all enemies in a 15ft cone originating from you towards the enemy you hit must make a Dex save. On a failure, they take damage equal to your Int modifier number of d6s (damage type is of your elemental affiliation). On a success they take half damage. You may use this feature once per rest, and may regain use of it by taking the Cast a Spell action. 
 
 ### Level 6
-#### Feature: Elemental Burst
-Once on your turn, when you deal damage with your Elemental Blade, all enemies in a 15ft cone originating from you towards the enemy you hit must make a Dex save. On a failure, they take damage equal to your Int modifier number of d6s (damage type is of your elemental affiliation). On a success they take half damage. 
+#### Feature: Draconic Armory
+When you activate your Dragonshard Blade, you gain access to your Draconic Armory, as the elemental energy from your blade covers your body. You gain resistance to the damage type of your elemental affiliation, and your AC increases by an amount equal to your Con mod. 
 
 ### Level 10
 #### Feature: Dragon's Blessing
-As a Bonus Action while your Elemental Blade is active, you may designate one ally within 60ft as the target of your Dragon's Blessing. That ally also gains the effects of your Draconic Armory. Whenever that ally is within 60ft of you and is damaged by an enemy, you may use your Aegis Defender feature, regardless of whether the enemy is marked or not. This effect ends when your Elemental Blade is dismissed. You may only use this feature once per rest. 
+As a Bonus Action while your Dragonshard Blade is active, you may designate one ally within 60ft as the target of your Dragon's Blessing. That ally also gains the effects of your Draconic Armory. Whenever that ally is within 60ft of you and is damaged by an enemy, you may use your Aegis Defender feature, regardless of whether the enemy is marked or not. This effect ends when your Dragonshard Blade is dismissed. You may only use this feature once per rest. 
 
 ### Level 14
 #### Feature: Channeled Element
-Whenever you deal damage of your elemental affiliation type to one or more enemies, you are able to harness some of the energy into your blade. Each time this occurs, increase the damage of your Elemental Blade by 1d4. This effect stacks, and resets upon the dismissal of your Elemental Blade. 
+Whenever you deal damage of your elemental affiliation type to one or more enemies, you are able to harness some of the energy into your blade. Each time this occurs, increase the damage of your Dragonshard Blade by 1d4. This effect stacks, and resets upon the dismissal of your Dragonshard Blade. 
 
 ### Level 18
 #### Feature: Dragon's Descent
-As you raise your blade and utter a cry, the dragon's full might enters you by your blade from the heavens. Once per long rest, you may cast True Polymorph on yourself, choosing to become a Dragon of type chosen for your elemental affiliation. This lasts for 1 minute, at which point you revert back to your normal form and gain 1 point of exhaustion. 
-
-### Concepts
-
+As you raise your blade and utter a cry, the dragon's full might enters you by your blade from the heavens. Once per long rest, you may cast True Polymorph on yourself as a Bonus Action, choosing to become an Adult Dragon of type chosen for your elemental affiliation. This lasts for 1 minute, at which point you revert back to your normal form and gain 1 point of exhaustion. 

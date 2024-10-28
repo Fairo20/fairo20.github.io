@@ -1,7 +1,8 @@
 [Swordmage](https://fairo20.github.io/Swordmage/Swordmage_Class.html)
 
 ### Level 3
-#### Spells
+#### Divine Guardian Spells
+You learn additional spells when you learn spells of specific levels, as shown on the Divine Guardian Magic table. Each spell counts as a Swordmage spell for you, but it doesn't count agains the number of Swordmage spells you know. These spells can't be replaced when you gain a level in this class.
 
 | Level | Spells          |
 | ----- | --------------- |
@@ -12,10 +13,10 @@
 | 5     | Circle of Power |
 
 #### Feature: Radiant Blade
-As a bonus action, you can activate your blade for one minute. While active, your blade glows with holy light, and sheds bright light in a 10ft radius. Whenever you deal damage with your Radiant Blade, add 1d4 radiant damage. 
+As a bonus action, you can activate your blade for one minute. While active, your blade glows with holy light. Whenever you deal damage with your Radiant Blade, add 1d6 radiant damage. 
 
 #### Feature: Healing Strike
-Your blade, when activated, can tell friend from foe. When you make a melee weapon attack with your Radiant Blade, you may choose to instead attack an ally within range. If you do so, they regain hit points equal to your damage roll instead. You may use this feature twice per short rest, and may regain a use of it by casting a leveled spell. 
+Your blade, when activated, can tell friend from foe. When you take the Attack action while your Radiant Blade is activated, you may choose to attack an ally within range. If you do so, they regain hit points equal to twice your damage roll instead of taking damage. Use of this feature counts as hitting with an attack. You may use this feature once per rest, and may regain use of it by taking the Cast a Spell action. 
 
 ### Level 6
 #### Feature: Radiant Beam
@@ -32,13 +33,11 @@ While your Radiant Blade is active, you may use a Bonus Action to activate this 
 ### Level 18
 #### Feature: Divine Permanence
 Your divine radiance knows no bounds. You gain the following effects:
-- There is no limit to the amount of times you may use your Healing Strike feature. 
-- Whenever you make a weapon attack, you may immediately make a Healing Strike. 
+- Whenever you make a weapon attack, you may immediately make a Healing Strike as a part of the same action.
 - The range of your Radiant Beam becomes 120ft.
 - Your Guardian Angel fly speed becomes 5 times your speed. 
 
 ### Concepts
-
 If I want Guardian Angel to be simpler:
 #### Feature: Guardian Angel
 While your Radiant Blade is active, you may use a Bonus Action to teleport to an unoccupied space within 5ft of an ally or a marked enemy. You can only use this feature prof bonus times per long rest. 
