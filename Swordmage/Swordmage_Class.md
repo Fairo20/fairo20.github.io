@@ -29,12 +29,14 @@ Explorer's pack or scholar's pack
 
 10 gold
 
-### Level 1: Half Caster
+### Level 1: Spellcasting
 Swordmages connect with the arcane world through their blades. As they weave through the air, they bind the arcane to the material world, allowing Swordmages to access the Weave itself and twist it to benefit their needs. 
+
+**Note**: Currently holding off on making the progression table. It's effectively the same progression as paladin for half casting. 
 
 **Cantrips**: You know two cantrips of your choice from the Swordmage spell list. At higher levels, you learn additional Swordmage cantrips of your choice, as shown in the Cantrips Known column of the Swordmage table. When you gain a level in this class, you can replace on of the Swordmage cantrips you know with another cantrip from the Swordmage spell list. 
 
-**Spells Known**: You know two 1st-level spells of your choice from the Swordmage spell list. The Spells Known column of the Swordmage table shows when you learn more Swordmage spells of your choice. Each of these spells must be of a level for which you have spell slots. For isntance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level. Additionally, when you gain a level in this class, you can choose one of the Swordmage spells you know and replace it with another spell from the [Swordmage spell list](https://fairo20.github.io/Swordmage/Swordmage_Spells.html), which also must be of a level for which you have spell slots.
+**Spells Known**: You know two 1st-level spells of your choice from the Swordmage spell list. The Spells Known column of the Swordmage table shows when you learn more Swordmage spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level. Additionally, when you gain a level in this class, you can choose one of the Swordmage spells you know and replace it with another spell from the [Swordmage spell list](https://fairo20.github.io/Swordmage/Swordmage_Spells.html), which also must be of a level for which you have spell slots.
 
 **Spell Slots**: The Swordmage table shows how many spell slots you have to cast your Swordmage spells of 1st level or higher. You regain all expended spell slots when you finish a long rest. For example, if you know the 1st-level spell Shield and have a 1st-level and a 2nd-level spell slot available, you can cast Shield using either slot. 
 
