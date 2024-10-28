@@ -29,10 +29,31 @@ Explorer's pack or scholar's pack
 
 10 gold
 
+| Level | Proficiency Bonus | Features                                         | Cantrips Known | Spells Known | 1st Level Spell Slots | 2nd Level Spell Slots | 3rd Level Spell Slots | 4th Level Spell Slots | 5th Level Spell Slots |
+| ----- | ----------------- | ------------------------------------------------ | -------------- | ------------ | --------------------- | --------------------- | --------------------- | --------------------- | --------------------- |
+| 1     | +2                | Spellcasting, Swordmage Bonding, Swordmage Aegis | 2              | 2            | 2                     |                       |                       |                       |                       |
+| 2     | +2                | Aegis Defender, Aegis Boon                       | 2              | 2            | 2                     |                       |                       |                       |                       |
+| 3     | +2                | Arcane Order, Student of the Past                | 2              | 3            | 3                     |                       |                       |                       |                       |
+| 4     | +2                | Ability Score Improvement                        | 2              | 3            | 3                     |                       |                       |                       |                       |
+| 5     | +3                | Combat Casting, Fighting Style                   | 2              | 4            | 4                     | 2                     |                       |                       |                       |
+| 6     | +3                | Arcane Order Feature                             | 3              | 4            | 4                     | 2                     |                       |                       |                       |
+| 7     | +3                | Double Aegis, Aegis Boon                         | 3              | 5            | 4                     | 3                     |                       |                       |                       |
+| 8     | +3                | Ability Score Improvement                        | 3              | 5            | 4                     | 3                     |                       |                       |                       |
+| 9     | +4                | Energizing Ward                                  | 3              | 6            | 4                     | 3                     | 2                     |                       |                       |
+| 10    | +4                | Arcane Order Feature                             | 3              | 6            | 4                     | 3                     | 2                     |                       |                       |
+| 11    | +4                | Greater Defender, Aegis Boon                     | 4              | 7            | 4                     | 3                     | 3                     |                       |                       |
+| 12    | +4                | Ability Score Improvement                        | 4              | 7            | 4                     | 3                     | 3                     |                       |                       |
+| 13    | +5                | Arcane Mind                                      | 4              | 8            | 4                     | 3                     | 3                     | 1                     |                       |
+| 14    | +5                | Arcane Order Feature                             | 4              | 8            | 4                     | 3                     | 3                     | 1                     |                       |
+| 15    | +5                | Total Aegis, Aegis Boon                          | 4              | 9            | 4                     | 3                     | 3                     | 2                     |                       |
+| 16    | +5                | Ability Score Improvement                        | 5              | 9            | 4                     | 3                     | 3                     | 2                     |                       |
+| 17    | +6                | Final Warding                                    | 5              | 10           | 4                     | 3                     | 3                     | 3                     | 1                     |
+| 18    | +6                | Arcane Order Feature                             | 5              | 10           | 4                     | 3                     | 3                     | 3                     | 1                     |
+| 19    | +6                | Epic Boon                                        | 5              | 11           | 4                     | 3                     | 3                     | 3                     | 2                     |
+| 20    | +6                | Living Weapon                                    | 5              | 11           | 4                     | 3                     | 3                     | 3                     | 2                     |
+
 ### Level 1: Spellcasting
 Swordmages connect with the arcane world through their blades. As they weave through the air, they bind the arcane to the material world, allowing Swordmages to access the Weave itself and twist it to benefit their needs. 
-
-**Note**: Currently holding off on making the progression table. It's effectively the same progression as paladin for half casting. 
 
 **Cantrips**: You know two cantrips of your choice from the Swordmage spell list. At higher levels, you learn additional Swordmage cantrips of your choice, as shown in the Cantrips Known column of the Swordmage table. When you gain a level in this class, you can replace on of the Swordmage cantrips you know with another cantrip from the Swordmage spell list. 
 
@@ -47,8 +68,7 @@ Swordmages connect with the arcane world through their blades. As they weave thr
 *Spell attack modifier* = your proficiency bonus + your Intelligence modifier
 
 ### Level 1: Swordmage Bonding
-Swordmages are defined by their bond with their weapons, an art that has transcended the ages. By meditating with their weapon, they can gain an arcane connection to their blade. During a rest, you may choose one weapon you are in possession of, and become bonded to that weapon. If you do so, any previous bond is broken. While a weapon is bonded, gain the following effects
-- You may use your bonded weapon as a spellcasting focus.
+Swordmages are defined by their bond with their weapons, an art that has transcended the ages. By meditating with their weapon, they can gain an arcane connection to their blade. During a rest, you may choose one melee weapon you are in possession of, and become bonded to that weapon. If you do so, any previous bond is broken. While a weapon is bonded, gain the following effects- You may use your bonded weapon as a spellcasting focus.
 - While you are wielding your bonded weapon, you have a +1 bonus to AC. This is increased to +3 if you have one hand free. 
 - If the weapon is within 60ft, you may recall it to your hand as a bonus action
 - If the weapon is on your person, when you would make an attack or cast a spell, you may instantly summon it to your hand.
@@ -66,25 +86,25 @@ As your familiarity with your Aegis expands, so too does your ability to channel
 ### Level 2: Aegis Boon
 Each Swordmage specializes in different attributes. Gain a boon from the below list. You gain another boon at levels 7, 11, and 15.
 - **Aegis of Assault Boons**
-	- **Disruptive Assault** - When you attack as a part of your Aegis reaction, you may choose to attack at disadvantage. If you hit, deal damage as normal. Reduce the damage taken by an ally by the amount of damage you dealt.
-	- **Escalating Assault** - When you use your Aegis reaction, an ally damaged by the marked enemy may make a weapon attack against the marked enemy.
-	- **Vigorous Assault** - When you use your Aegis reaction, if your attack hits, you may gain temp HP equal to half the damage dealt.
+	- **Disruptive Assault** - When you attack as a part of your Aegis Defender feature, you may choose to attack at disadvantage. If you hit, deal damage as normal. Reduce the damage taken by an ally by the amount of damage you dealt.
+	- **Escalating Assault** - When you use your Aegis Defender feature, an ally damaged by the marked enemy may make a weapon attack against the marked enemy.
+	- **Vigorous Assault** - When you use your Aegis Defender feature, if your attack hits, you may gain temporary hit points equal to half the damage dealt.
 - **Aegis of Ensnarement Boons**
-	- **Blinding Ensnarement** - When you use your Aegis reaction, that enemy must make a Con save against your spell save DC or be blinded until the end of your next turn.
-	- **Grasping Ensnarement** - When you use your Aegis reaction, that enemy teleported treats all terrain as difficult terrain until the end of your next turn
-	- **Diverting Ensnarement** - When you use your Aegis reaction, you may choose to become the target of the triggering action and receive any damage and effects of the attack instead of your ally.
+	- **Blinding Ensnarement** - When you use your Aegis Defender feature, that enemy must make a Constitution saving throw or be blinded until the end of your next turn.
+	- **Diverting Ensnarement** - When you use your Aegis Defender feature, you may choose to become the target of the triggering action and receive any damage and effects of the attack instead of your ally.
+	- **Grasping Ensnarement** - When you use your Aegis Defender feature, that enemy teleported treats all terrain as difficult terrain until the end of your next turn
 - **Aegis of Shielding Boons**
-	- **Enhanced Shielding** - When you use your Aegis reaction, you may also reduce the damage dealt by your Constitution modifier.
-	- **Reflective Shielding** - When you use your Aegis reaction, you may deal damage to the marked target equal to half the amount of damage prevented
-	- **Siphoning Shielding** - When you use your Aegis reaction, you may gain temp HP equal to half the amount of damage prevented
+	- **Enhanced Shielding** - When you use your Aegis Defender feature, you may also reduce the damage dealt by your Constitution modifier.
+	- **Reflective Shielding** - When you use your Aegis Defender feature, you may deal damage to the marked target equal to half the amount of damage prevented
+	- **Siphoning Shielding** - When you use your Aegis Defender feature, you may gain temporary HP equal to half the amount of damage prevented
 - **General Boons**
-	- **Distant Aegis** - Double the range at which you may mark enemies with Swordmage Aegis
-	- **Shared Warding** - Adjacent allies gain a +1 bonus to AC while you are wielding your bonded weapon
-	- **Marked Strike** - If you deal damage to a marked enemy, add your proficiency bonus to the damage. 
-	- **Regenerative Aegis** - When an enemy marked by you within 60ft misses with an attack, you may gain proficiency bonus temp HP.
 	- **Aegis Parry** - Whenever an enemy marked by you within 60ft attacks you, you may use your reaction to force them to roll at disadvantage.
+	- **Distant Aegis** - Double the range at which you may mark enemies with Swordmage Aegis
+	- **Marked Strike** - If you deal damage to a marked enemy, add your proficiency bonus to the damage. 
+	- **Regenerative Aegis** - When an enemy marked by you within 60ft misses with an attack, you may gain proficiency bonus temporary hit points.
+	- **Shared Warding** - Adjacent allies gain a +1 bonus to AC while you are wielding your bonded weapon
 
-### Level 3: Subclasses
+### Level 3: Arcane Order
 When you reach 3rd level, you are officially inducted into your Arcane Order, as signified by gaining access to your order's signature blade. You have been in training before, but now you are a full-fledged Swordmage. Your choice grants you features at 3rd level and again at 6th, 10th, 14th, and 18th level. Those features include order spells.
 
 [Order of the Archeomancer](https://fairo20.github.io/Swordmage/Subclasses/Order%20of%20the%20Archeomancer.html)
@@ -100,7 +120,7 @@ When you reach 3rd level, you are officially inducted into your Arcane Order, as
 ### Level 3: Student of the Past
 Your study of the arcane and its history has led you to recognize the patterns when they occur within magical effects. Choose Arcana or History. If you are not proficient in this skill, you become proficient in it. If you are already proficient in it, you may double your proficiency bonus in that skill. In addition, you have advantage on Intelligence checks to determine the history or use of any magical object, or to identify a spell.  
 
-### Level 4: ASI
+### Level 4: Ability Score Increase
 When you reach 4th level, and again at 8th, 12th, and 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. In addition to this, you can choose to take a feat for which you qualify for.
 
 ### Level 5: Combat Casting
@@ -114,47 +134,47 @@ You adopt a particular style of fighting as your specialty. Choose one of the op
 - **Mobile**: Your movement speed increases by 10ft. Additionally, when you make a melee attack against a creature, you don't provoke opportunity attacks from that creature for the rest of your turn.
 - **Savage Attacker**: Your melee attacks crit on a roll of 19 or 20. Additionally, when you make a critical hit, you roll an additional die of damage. 
 
-### Level 6: Subclass Feature
+### Level 6: Arcane Order Feature
 You become more advanced in your order as your studies and experiences lead you to further breakthroughs in knowledge. Your choice grants you features at 3rd level and again at 6th, 10th, 14th, and 18th level. 
 
 ### Level 7: Double Aegis
 Your greater focus allows you to track multiple enemies at once. You may mark up to two enemies using the same bonus action. If you mark any creatures this way, any previously existing marks end. 
 In addition, whenever you deal damage with a melee weapon attack, you may mark that enemy. This does not end any existing marks. 
 
-### Level 8: ASI
+### Level 8: Ability Score Increase
 When you reach 4th level, and again at 8th, 12th, and 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. In addition to this, you can choose to take a feat for which you qualify for.
 
 ### Level 9: Energizing Ward
 Whenever you are dealt damage by a marked target, your sword absorbs some of the energy and channels it back into you, as you capture some of the essence of the aggressor. You may gain temp HP equal to half the damage dealt, rounded down. You can use this feature proficiency bonus times per long rest.
 
-### Level 10: Subclass Feature
+### Level 10: Arcane Order Feature
 You become more advanced in your order as your studies and experiences lead you to further breakthroughs in knowledge. Your choice grants you features at 3rd level and again at 6th, 10th, 14th, and 18th level. 
 
 ### Level 11: Greater Defender 
 With greater familiarity with your Aegis, you are now effortlessly able to manipulate your enemies. Once per rest, you may use your Aegis Defender feature without consuming your reaction. In addition, your Aegis Defender feature gains the following upgrade:
-- **Aegis of Assault**: You may cast a cantrip targeting the triggering enemy instead of making the weapon attack. 
-- **Aegis of Ensnarement**: When the triggering enemy is teleported, you may also teleport into the space they originally occupied. 
-- **Aegis of Shielding**: You may teleport the affected ally to a space adjacent to you. 
+**Aegis of Assault**: You may cast a cantrip targeting the triggering enemy instead of making the weapon attack. 
+**Aegis of Ensnarement**: When the triggering enemy is teleported, you may also teleport into the space they originally occupied. 
+**Aegis of Shielding**: You may teleport the affected ally to a space adjacent to you. 
 
-### Level 12: ASI
+### Level 12: Ability Score Increase
 When you reach 4th level, and again at 8th, 12th, and 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. In addition to this, you can choose to take a feat for which you qualify for.
 
 ### Level 13: Arcane Mind
 Your experience with warding against the onslaught of enemies has taught you patterns that you can recognize in the moment to avoid dangerous situations. Whenever you would make a saving throw, you may instead choose to make an Intelligence saving throw. On a success, you are unaffected by that effect, as you deduce what will occur and make the necessary moves to avoid it. You may only use this feature proficiency bonus times per long rest. 
 
-### Level 14: Subclass Feature
+### Level 14: Arcane Order Feature
 You become more advanced in your order as your studies and experiences lead you to further breakthroughs in knowledge. Your choice grants you features at 3rd level and again at 6th, 10th, 14th, and 18th level. 
 
 ### Level 15: Total Aegis
 Your defensive magic has no bounds, as you ward against the crash of incoming armies. When you mark targets with your Aegis, you may now choose to mark any number of targets within range. If you mark any creatures this way, any previously existing marks end. 
 
-### Level 16: ASI
+### Level 16: Ability Score Increase
 When you reach 4th level, and again at 8th, 12th, and 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. In addition to this, you can choose to take a feat for which you qualify for.
 
 ### Level 17: Final Warding
-Once per round, when a marked enemy ends their turn without dealing damage to you, they take damage equal to your Swordmage level.
+Once per round, when a marked enemy ends their turn without dealing damage to you, they take force damage equal to your Swordmage level.
 
-### Level 18: Subclass Feature
+### Level 18: Arcane Order Feature
 You become more advanced in your order as your studies and experiences lead you to further breakthroughs in knowledge. Your choice grants you features at 3rd level and again at 6th, 10th, 14th, and 18th level. 
 
 ### Level 19: Epic Boon
