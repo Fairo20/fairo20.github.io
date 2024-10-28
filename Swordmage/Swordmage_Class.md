@@ -152,8 +152,11 @@ You become more advanced in your order as your studies and experiences lead you 
 
 ### Level 11: Greater Defender 
 With greater familiarity with your Aegis, you are now effortlessly able to manipulate your enemies. Once per rest, you may use your Aegis Defender feature without consuming your reaction. In addition, your Aegis Defender feature gains the following upgrade:
+
 **Aegis of Assault**: You may cast a cantrip targeting the triggering enemy instead of making the weapon attack. 
+
 **Aegis of Ensnarement**: When the triggering enemy is teleported, you may also teleport into the space they originally occupied. 
+
 **Aegis of Shielding**: You may teleport the affected ally to a space adjacent to you. 
 
 ### Level 12: Ability Score Increase
