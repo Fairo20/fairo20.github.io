@@ -2,30 +2,46 @@
 
 ### Hit Points
 Hit Dice: 1d8
+
 Hit Points at First Level: 8 + your Constitution modifier
+
 Hit Points at Higher Levels: 5 + your Constitution modifier
 
 ### Proficiencies
 Armor: Light Armor, Medium Armor
+
 Weapons: Simple Weapons and Martial Weapons
+
 Tools: None
+
 Languages: Common
+
 Saving Throws: Constitution, Intelligence
+
 Skills: Choose two from Arcana, Athletics, History, Insight, Investigation, Intimidate, or Performance
 
 ### Equipment
 Martial weapon of your choice
+
 Chain shirt or scale mail
+
 Explorer's pack or scholar's pack
+
 10 gold
 
 ### Level 1: Half Caster
 Swordmages connect with the arcane world through their blades. As they weave through the air, they bind the arcane to the material world, allowing Swordmages to access the Weave itself and twist it to benefit their needs. 
+
 **Cantrips**: You know two cantrips of your choice from the Swordmage spell list. At higher levels, you learn additional Swordmage cantrips of your choice, as shown in the Cantrips Known column of the Swordmage table. When you gain a level in this class, you can replace on of the Swordmage cantrips you know with another cantrip from the Swordmage spell list. 
+
 **Spells Known**: You know two 1st-level spells of your choice from the Swordmage spell list. The Spells Known column of the Swordmage table shows when you learn more Swordmage spells of your choice. Each of these spells must be of a level for which you have spell slots. For isntance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level. Additionally, when you gain a level in this class, you can choose one of the Swordmage spells you know and replace it with another spell from the [Swordmage spell list](https://fairo20.github.io/Swordmage/Swordmage_Spells.html), which also must be of a level for which you have spell slots.
+
 **Spell Slots**: The Swordmage table shows how many spell slots you have to cast your Swordmage spells of 1st level or higher. You regain all expended spell slots when you finish a long rest. For example, if you know the 1st-level spell Shield and have a 1st-level and a 2nd-level spell slot available, you can cast Shield using either slot. 
+
 **Spellcasting Ability**: Intelligence is your spellcasting ability for your Swordmage spells, since their power derives from your knowledge and implementation of the abstract arcane arts. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a Swordmage spell you cast and when making an attack roll with one. 
+
 *Spell save DC* = 8 + your proficiency bonus + your Intelligence modifier
+
 *Spell attack modifier* = your proficiency bonus + your Intelligence modifier
 
 ### Level 1: Swordmage Bonding
@@ -114,9 +130,9 @@ You become more advanced in your order as your studies and experiences lead you 
 
 ### Level 11: Greater Defender 
 With greater familiarity with your Aegis, you are now effortlessly able to manipulate your enemies. Once per rest, you may use your Aegis Defender feature without consuming your reaction. In addition, your Aegis Defender feature gains the following upgrade:
-**Aegis of Assault**: You may cast a cantrip targeting the triggering enemy instead of making the weapon attack. 
-**Aegis of Ensnarement**: When the triggering enemy is teleported, you may also teleport into the space they originally occupied. 
-**Aegis of Shielding**: You may teleport the affected ally to a space adjacent to you. 
+- **Aegis of Assault**: You may cast a cantrip targeting the triggering enemy instead of making the weapon attack. 
+- **Aegis of Ensnarement**: When the triggering enemy is teleported, you may also teleport into the space they originally occupied. 
+- **Aegis of Shielding**: You may teleport the affected ally to a space adjacent to you. 
 
 ### Level 12: ASI
 When you reach 4th level, and again at 8th, 12th, and 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. In addition to this, you can choose to take a feat for which you qualify for.
