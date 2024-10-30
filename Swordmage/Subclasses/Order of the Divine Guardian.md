@@ -13,10 +13,10 @@ You learn additional spells when you learn spells of specific levels, as shown o
 | 5     | Circle of Power |
 
 #### Feature: Radiant Blade
-As a bonus action, you can activate your blade for one minute. While active, your blade glows with holy light. Whenever you deal damage with your Radiant Blade, add 1d6 radiant damage. 
+As a bonus action, you can activate your blade for one minute. While active, your blade glows with holy light. Whenever you deal damage with your Radiant Blade, add 1d4 radiant damage. 
 
 #### Feature: Healing Strike
-Your blade, when activated, can tell friend from foe. When you take the Attack action while your Radiant Blade is activated, you may choose to attack an ally within range. If you do so, they regain hit points equal to twice your damage roll instead of taking damage. Use of this feature counts as hitting with an attack. You may use this feature once per rest, and may regain use of it by taking the Cast a Spell action. 
+Your blade, when activated, can tell friend from foe. When you take the Attack action while your Radiant Blade is activated, you may choose to attack an ally within range. If you do so, they regain hit points equal to twice your damage roll instead of taking damage. Use of this feature counts as hitting with an attack. You may only use this feature once per rest, and may regain use of it by taking the Cast a Spell action to cast a leveled spell. 
 
 ### Level 6
 #### Feature: Radiant Beam
@@ -28,14 +28,14 @@ You may now use your Aegis Defender feature when a marked enemy affects an ally 
 
 ### Level 14
 #### Feature: Guardian Angel
-While your Radiant Blade is active, you may use a Bonus Action to activate this feature. While this feature is active, you have a fly speed equal to twice your speed, however whenever you move this way, you must end your turn adjacent to an ally or a marked enemy. This effect ends when your Radiant Blade is dismissed.
+While your Radiant Blade is active, you may use a Bonus Action to activate this feature. You have a fly speed equal to twice your speed, however when you move this way, you must end your turn adjacent to an ally or a marked enemy. This effect ends when your Radiant Blade is dismissed, or when you take a Bonus Action to end it.
 
 ### Level 18
 #### Feature: Divine Permanence
 Your divine radiance knows no bounds. You gain the following effects:
 - Whenever you make a weapon attack, you may immediately make a Healing Strike as a part of the same action.
 - The range of your Radiant Beam becomes 120ft.
-- Your Guardian Angel fly speed becomes 5 times your speed. 
+- Your Guardian Angel fly speed becomes five times your speed. 
 
 ### Concepts
 If I want Guardian Angel to be simpler:

@@ -1,9 +1,31 @@
 [Swordmage](https://fairo20.github.io/Swordmage/Swordmage_Class.html)
 
-# 1st Level
+### Swordmage Spell List
+#### Cantrips
+- Acid Splash
+- Blade Ward
+- Booming Blade
+- Create Flames
+- Dancing Lights
+- Firebolt
+- Frostbite
+- Greenflame Blade
+- Gust
+- Lightning Lure
+- Mage Hand
+- Mold Earth
+- Poison Spray
+- Ray of Frost
+- Shape Water
+- Shocking Grasp
+- Sword Burst
+- Thunderclap
+- True Strike
+#### 1st Level
 - Absorb Elements
 - Burning Hands
 - Chromatic Orb
+- Color Spray
 - Detect Magic
 - Earth Tremor
 - Expeditious Retreat
@@ -17,42 +39,31 @@
 - Thunderwave
 - Witch Bolt
 
-# 2nd Level
+#### 2nd Level
 - Acid Arrow
 - Aganazzar's Scorcher
-- Arcane Lock
 - Blindness/Deafness
 - Blur
-- Borrowed Knowledge
-- Cloud of Daggers
 - Enhance Ability
 - Gust of Wind
 - Hold Person
 - Kinetic Jaunt
 - Levitate
-- Magic Weapon
-- Mind Spike
 - Mirror Image
 - Misty Step
 - Rime's Binding Ice
 - Scorching Ray
-- Shadow Blade
-- Shatter
-- Tasha's Mind Whip
 - Vortex Warp
 - Warding Bond
 
-# 3rd Level
-- Blink
+#### 3rd Level
 - Counterspell
 - Dispel Magic
-- Elemental Weapon
 - Erupting Earth
 - Fireball
 - Fly
 - Haste
 - Lightning Bolt
-- Melf's Minute Meteors
 - Protection from Energy
 - Sleet Storm
 - Slow
@@ -62,13 +73,12 @@
 - Wall of Sand
 - Wall of Water
 
-# 4th Level
+#### 4th Level
 - Banishment
 - Dimension Door
 - Elemental Bane
 - Fire Shield
 - Ice Storm
-- Psychic Lance
 - Resilient Sphere
 - Stoneskin
 - Storm Sphere
@@ -76,15 +86,13 @@
 - Wall of Fire
 - Watery Sphere
 
-# 5th Level
+#### 5th Level
 - Cloudkill
 - Cone of Cold
 - Destructive Wave
 - Hold Monster
 - Immolation
-- Negative Energy Flood
 - Steel Wind Strike
-- Telekinesis
 - Teleportation Circle
 - Wall of Force
 - Wall of Light
